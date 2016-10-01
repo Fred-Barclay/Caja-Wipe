@@ -1,0 +1,3 @@
+debian/tmp/usr/share/locale
+/data/caja-wipe-notification /usr/share/caja-wipe/
+/src/caja-wipe.py /usr/share/caja-wipe/

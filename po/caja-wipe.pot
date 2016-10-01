@@ -1,0 +1,30 @@
+# caja-wipe.pot
+# Copyright (C) 2016 Caja Wipe authors
+# This file is distributed under the same license as Caja Wipe.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: caja-wipe 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-09 12:02+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: extension/caja-wipe.py:99
+msgid "_Wipe File"
+msgid_plural "_Wipe Files"
+msgstr[0] ""
+msgstr[1] ""
+
+#: extension/caja-wipe.py:100
+msgid "Wipe this file"
+msgid_plural "Wipe these files"
+msgstr[0] ""
+msgstr[1] ""

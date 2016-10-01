@@ -1,0 +1,6 @@
+Name: Caja Wipe Extension requires restarting Caja
+Priority: High
+Terminal: False
+DontShowAfterReboot: True
+DisplayIf: pgrep caja
+Description: Caja Wipe Extension has been installed. You should restart caja to make it work properly (hint: 'caja -q' in terminal). Or, if you prefer, a session restart is more than sufficient. After the restart, a new option will emerge in the Caja context menu, allowing you to securely delete files.
