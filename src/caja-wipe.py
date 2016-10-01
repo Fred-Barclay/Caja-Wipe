@@ -76,21 +76,32 @@ class CajaWipe(GObject.GObject, Caja.MenuProvider):
 		if not os.access(pwd, os.W_OK):
 			return
 
-		# If file...
-		item = Caja.MenuItem(
-			name='SimpleMenuExtension::Wipe_File',
-			label=ngettext('Wipe this file', 'Wipe these files', len(files)),
-			tip=ngettext('Wipe this file', 'Wipe these files', len(files))
-		)
-		item.connect('activate', self.wipe_file)
-		return [item]
+		# If we're erasing only directories
+		if file.is_directory():
+			item = Caja.MenuItem(
+				name='SimpleMenuExtension::Wipe_Directories',
+				label=ngettext('Wipe this folder', 'Wipe these folders', len(files)),
+				tip=ngettext('Wipe this folder', 'Wipe these folders', len(files))
+			)
+			item.connect('activate', self.wipe_file, file)
+			return [item]
+
+		# If we're erasing files, or files and directories
+		else:
+			item = Caja.MenuItem(
+				name='SimpleMenuExtension::Wipe_File',
+				label=ngettext('Wipe this file', 'Wipe these files', len(files)),
+				tip=ngettext('Wipe this file', 'Wipe these files', len(files))
+			)
+			item.connect('activate', self.wipe_file, file)
+			return [item]
 
 	# Aaaannnnnndddddd....... ACTION!
-	def wipe_file(self, menu):
+	def wipe_file(self, menu, file):
 		for filename in filelist:
 			path = pwd+"/"+filename
-			print(filelist) # Debugging
-			print(filename) # Debugging
+			# print(filelist) # Debugging
+			# print(filename) # Debugging
 			print(path) # Debugging
 			cmd = "srm -rv "+path # -v is good for debugging
 			os.system(cmd)

@@ -16,13 +16,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: extension/caja-wipe.py:80
+#: extension/caja-wipe.py:83
+msgid "Wipe this folder"
+msgid_plural "Wipe these folders"
+msgstr[0] "Effacer ce dossier"
+msgstr[1] "Effacer ces dossiers"
+
+#: extension/caja-wipe.py:84
+msgid "Wipe this folder"
+msgid_plural "Wipe these folders"
+msgstr[0] "Effacer ce dossier"
+msgstr[1] "Effacer ces dossiers"
+
+#: extension/caja-wipe.py:93
 msgid "Wipe this file"
 msgid_plural "Wipe these files"
 msgstr[0] "Effacer ce fichier"
 msgstr[1] "Effacer ces fichiers"
 
-#: extension/caja-wipe.py:81
+#: extension/caja-wipe.py:94
 msgid "Wipe this file"
 msgid_plural "Wipe these files"
 msgstr[0] "Effacer ce fichier"
