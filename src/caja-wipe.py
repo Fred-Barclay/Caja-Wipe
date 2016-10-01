@@ -51,30 +51,32 @@ class CajaWipe(GObject.GObject, Caja.MenuProvider):
 	'''Simple Caja extension to wipe files, using the secure-delete suite.'''
 	def __init__(self):
 		pass
-	# If we are securely deleting a file/directory...
+
+	# Choosing the file/directory
 	def get_file_items(self, window, files):
 		'''Returns the menu items to display when one or more files/folders are
 		selected.'''
 
 		# I need this in wipe_file
 		global filelist
-		global dir_path
+		global pwd
 
-		dir_path = None # is this necessary?
+		pwd = None # is this necessary?
 		filelist = []
 		for file in files:
-			if dir_path == None: # first file: find path to directory
-				dir_path = file.get_parent_location().get_path()
+			if pwd == None: # first file: find path to directory
+				pwd = file.get_parent_location().get_path()
 			name = file.get_name()
 			filelist += [name]
 
-		if dir_path == None or len(filelist) == 0:
+		if pwd == None or len(filelist) == 0:
 			return
 
 		# Make sure that the user has write permissions in this directory
-		if not os.access(dir_path, os.W_OK):
+		if not os.access(pwd, os.W_OK):
 			return
 
+		# If file...
 		item = Caja.MenuItem(
 			name='SimpleMenuExtension::Wipe_File',
 			label=ngettext('Wipe this file', 'Wipe these files', len(files)),
@@ -86,7 +88,7 @@ class CajaWipe(GObject.GObject, Caja.MenuProvider):
 	# Aaaannnnnndddddd....... ACTION!
 	def wipe_file(self, menu):
 		for filename in filelist:
-			path = dir_path+"/"+filename
+			path = pwd+"/"+filename
 			print(filelist) # Debugging
 			print(filename) # Debugging
 			print(path) # Debugging

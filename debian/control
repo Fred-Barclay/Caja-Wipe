@@ -8,4 +8,4 @@ Standards-Version: 3.9.2
 Package: caja-wipe
 Architecture: all
 Depends: ${misc:Depends}, caja (>= 1.08), python-caja (>= 1.08), xautomation (>=1.07), secure-delete (>=3.1-6)
-Description: Extension to securely delete files for Caja file manager.
+Description: Caja extension to securely delete files and directories

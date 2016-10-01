@@ -7,7 +7,7 @@ programme.
 Description
 ==============
 
-Caja Wipe is a small Python 3 program for the Caja file manager (the default
+Caja Wipe is a small Python 3 extension for the Caja file manager (the default
 file manager in MATE) that adds options to the right-click menu to securely
 delete files.
 `srm` is called when deleting files. The deletion algorithm is this:
@@ -32,8 +32,13 @@ overwriting old data which belonged to the file.
 
 Examples
 ==============
-You want to completely remove a document with your bank
-account number from your computer.
+You want to completely remove a document with your bank account number from
+your computer.  
+
+You need to delete your private GPG key from your secret folder.  
+
+You just really, *really*, don't want anyone to see that embarassing photo from
+grade school...
 
 Building and Installing
 =======================
@@ -49,7 +54,7 @@ cd .. && sudo dpkg -i install caja-wipe_0.8.9_all.deb
 
 Limitations
 ==============
-(Adapted from the man pages of `srm`):
+(Adapted from the man page of `srm`):
  - NFS:    Beware of NFS. You can't ensure you really completely wiped your data
 from the remote disks, especially because of caching.
 
