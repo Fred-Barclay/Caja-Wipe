@@ -12,13 +12,13 @@ msgstr ""
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: extension/caja-wipe.py:83
-msgid "Wipe this folder"
-msgid_plural "Wipe these folders"
+msgid "_Wipe this folder"
+msgid_plural "_Wipe these folders"
 msgstr[0] "Effacer ce dossier"
 msgstr[1] "Effacer ces dossiers"
 
@@ -29,8 +29,8 @@ msgstr[0] "Effacer ce dossier"
 msgstr[1] "Effacer ces dossiers"
 
 #: extension/caja-wipe.py:93
-msgid "Wipe this file"
-msgid_plural "Wipe these files"
+msgid "_Wipe this file"
+msgid_plural "_Wipe these files"
 msgstr[0] "Effacer ce fichier"
 msgstr[1] "Effacer ces fichiers"
 

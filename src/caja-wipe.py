@@ -80,7 +80,7 @@ class CajaWipe(GObject.GObject, Caja.MenuProvider):
 		if file.is_directory():
 			item = Caja.MenuItem(
 				name='SimpleMenuExtension::Wipe_Directories',
-				label=ngettext('Wipe this folder', 'Wipe these folders', len(files)),
+				label=ngettext('_Wipe this folder', '_Wipe these folders', len(files)),
 				tip=ngettext('Wipe this folder', 'Wipe these folders', len(files))
 			)
 			item.connect('activate', self.wipe_file, file)
@@ -90,7 +90,7 @@ class CajaWipe(GObject.GObject, Caja.MenuProvider):
 		else:
 			item = Caja.MenuItem(
 				name='SimpleMenuExtension::Wipe_File',
-				label=ngettext('Wipe this file', 'Wipe these files', len(files)),
+				label=ngettext('_Wipe this file', '_Wipe these files', len(files)),
 				tip=ngettext('Wipe this file', 'Wipe these files', len(files))
 			)
 			item.connect('activate', self.wipe_file, file)

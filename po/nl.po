@@ -12,13 +12,13 @@ msgstr ""
 "Language-Team: Dutch <pjotrvertaalt@gmail.com>\n"
 "Language: Dutch (Flemish)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=INTEGER; plural=(n > 1);\n"
 
 #: extension/caja-wipe.py:83
-msgid "Wipe this folder"
-msgid_plural "Wipe these folders"
+msgid "_Wipe this folder"
+msgid_plural "_Wipe these folders"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -29,8 +29,8 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: extension/caja-wipe.py:93
-msgid "Wipe this file"
-msgid_plural "Wipe these files"
+msgid "_Wipe this file"
+msgid_plural "_Wipe these files"
 msgstr[0] "Vernietig dit bestand"
 msgstr[1] "Vernietig deze bestanden"
 

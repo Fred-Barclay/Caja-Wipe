@@ -18,8 +18,8 @@ msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 #: extension/caja-wipe.py:83
-msgid "Wipe this folder"
-msgid_plural "Wipe these folders"
+msgid "_Wipe this folder"
+msgid_plural "_Wipe these folders"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -30,8 +30,8 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: extension/caja-wipe.py:93
-msgid "Wipe this file"
-msgid_plural "Wipe these files"
+msgid "_Wipe this file"
+msgid_plural "_Wipe these files"
 msgstr[0] ""
 msgstr[1] ""
 
