@@ -1,6 +1,6 @@
 Format: http://dep.debian.net/deps/dep5
 Upstream-Name: caja-wipe
-Source: https://github.com/Fred-Barclay/Caja-wipe
+Source: https://github.com/Fred-Barclay/Caja-Wipe
 
 Files: *
 Copyright: 2016, Caja Wipe Authors
