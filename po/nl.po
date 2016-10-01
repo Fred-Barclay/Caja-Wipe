@@ -19,23 +19,23 @@ msgstr ""
 #: extension/caja-wipe.py:83
 msgid "_Wipe this folder"
 msgid_plural "_Wipe these folders"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "_Vernietig deze map definitief"
+msgstr[1] "_Vernietig deze mappen definitief"
 
 #: extension/caja-wipe.py:84
 msgid "Wipe this folder"
 msgid_plural "Wipe these folders"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Vernietig deze map definitief"
+msgstr[1] "Vernietig deze mappen definitief"
 
 #: extension/caja-wipe.py:93
 msgid "_Wipe this file"
 msgid_plural "_Wipe these files"
-msgstr[0] "Vernietig dit bestand"
-msgstr[1] "Vernietig deze bestanden"
+msgstr[0] "_Vernietig dit bestand definitief"
+msgstr[1] "_Vernietig deze bestanden definitief"
 
 #: extension/caja-wipe.py:94
 msgid "Wipe this file"
 msgid_plural "Wipe these files"
-msgstr[0] "Vernietig dit bestand"
-msgstr[1] "Vernietig deze bestanden"
+msgstr[0] "Vernietig dit bestand definitief"
+msgstr[1] "Vernietig deze bestanden definitief"
