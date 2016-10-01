@@ -53,8 +53,8 @@ class CajaWipe(GObject.GObject, Caja.MenuProvider):
 		pass
 	# If we are securely deleting a file/directory...
 	def get_file_items(self, window, files):
-		"""Returns the menu items to display when one or more files/folders are
-		selected."""
+		'''Returns the menu items to display when one or more files/folders are
+		selected.'''
 
 		# I need this in wipe_file
 		global filelist
@@ -77,8 +77,8 @@ class CajaWipe(GObject.GObject, Caja.MenuProvider):
 
 		item = Caja.MenuItem(
 			name='SimpleMenuExtension::Wipe_File',
-			label=ngettext('Wipe File', 'Wipe Files', len(files)),
-			tip=ngettext('Wipe File', 'Wipe Files', len(files))
+			label=ngettext('Wipe this file', 'Wipe these files', len(files)),
+			tip=ngettext('Wipe this file', 'Wipe these files', len(files))
 		)
 		item.connect('activate', self.wipe_file)
 		return [item]

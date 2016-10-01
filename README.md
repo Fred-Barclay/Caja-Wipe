@@ -10,7 +10,7 @@ Description
 Caja Wipe is a small Python 3 program for the Caja file manager (the default
 file manager in MATE) that adds options to the right-click menu to securely
 delete files.
-`srm` is called when deleting files. By default, `srm` uses:  
+`srm` is called when deleting files. The deletion algorithm is this:
 ```
 *      1 pass with 0xff
 
@@ -41,7 +41,7 @@ Debian (and Debian-based distros)
 a) Download source code  
 ```
 git clone https://github.com/Fred-Barclay/Caja-Wipe.git
-cd Caja-Wipe.git
+cd Caja-Wipe
 dpkg-buildpackage
 cd .. && sudo dpkg -i install caja-wipe_0.8.9_all.deb
 ```

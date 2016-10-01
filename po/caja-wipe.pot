@@ -17,13 +17,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: extension/caja-wipe.py:99
-msgid "_Wipe File"
-msgid_plural "_Wipe Files"
+#: extension/caja-wipe.py:80
+msgid "_Wipe this file"
+msgid_plural "_Wipe these files"
 msgstr[0] ""
 msgstr[1] ""
 
-#: extension/caja-wipe.py:100
+#: extension/caja-wipe.py:81
 msgid "Wipe this file"
 msgid_plural "Wipe these files"
 msgstr[0] ""
