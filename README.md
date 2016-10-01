@@ -50,6 +50,18 @@ cd Caja-Wipe
 dpkg-buildpackage
 cd .. && sudo dpkg -i install caja-wipe_0.8.9_all.deb
 ```
+b) Restart caja  
+`caja -q`
+
+Other distros (not system-wide)  
+```
+mkdir -r ~/.local/share/caja-python/extensions/
+git clone https://github.com/Fred-Barclay/Caja-Wipe.git
+cd Caja-Wipe/src
+cp caja-wipe.py ~/.local/share/caja-python/extensions/caja-wipe.py
+```
+Restart Caja  
+`caja -q`
 
 
 Limitations
