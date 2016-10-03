@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: caja-wipe 1\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: Fred Barclay <BugsAteFred@gmail.com>\n"
 "POT-Creation-Date: 2016-10-01 23:15+1000\n"
 "PO-Revision-Date: 2016-10-01 23:25+1000\n"
 "Last-Translator: KDB2 <https://github.com/KDB2>\n"
@@ -19,8 +19,8 @@ msgstr ""
 #: extension/caja-wipe.py:83
 msgid "_Wipe this folder"
 msgid_plural "_Wipe these folders"
-msgstr[0] "Effacer ce dossier"
-msgstr[1] "Effacer ces dossiers"
+msgstr[0] "_Effacer ce dossier"
+msgstr[1] "_Effacer ces dossiers"
 
 #: extension/caja-wipe.py:84
 msgid "Wipe this folder"
@@ -31,8 +31,8 @@ msgstr[1] "Effacer ces dossiers"
 #: extension/caja-wipe.py:93
 msgid "_Wipe this file"
 msgid_plural "_Wipe these files"
-msgstr[0] "Effacer ce fichier"
-msgstr[1] "Effacer ces fichiers"
+msgstr[0] "_Effacer ce fichier"
+msgstr[1] "_Effacer ces fichiers"
 
 #: extension/caja-wipe.py:94
 msgid "Wipe this file"
