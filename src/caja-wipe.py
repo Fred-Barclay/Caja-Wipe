@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+ #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 # Caja Wipe - Extension for Caja to wipe files and/or free disk space.
@@ -44,6 +44,7 @@
 #       BugsAteFred@gmail.com
 
 import os
+import subprocess
 from gi.repository import Caja, GObject
 from gettext import ngettext
 
@@ -86,7 +87,7 @@ class CajaWipe(GObject.GObject, Caja.MenuProvider):
 			item.connect('activate', self.wipe_file, file)
 			return [item]
 
-		# If we're erasing files, or files and directories
+		# If we're erasing pnly files, or both files and directories
 		else:
 			item = Caja.MenuItem(
 				name='SimpleMenuExtension::Wipe_File',
@@ -100,8 +101,10 @@ class CajaWipe(GObject.GObject, Caja.MenuProvider):
 	def wipe_file(self, menu, file):
 		for filename in filelist:
 			path = pwd+"/"+filename
-			# print(filelist) # Debugging
-			# print(filename) # Debugging
+			# path = str(path)
+			if not os.access(path, os.W_OK):
+				print("You do not have permission to wipe this file") # Debugging
+				return
 			print(path) # Debugging
-			cmd = "srm -rv "+path # -v is good for debugging
-			os.system(cmd)
+			cmd = [ "srm", "-rv", path ]
+			subprocess.call(cmd)
