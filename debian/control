@@ -1,7 +1,7 @@
 Source: caja-wipe
 Section: mate
 Priority: extra
-Maintainer: Fred Barclay. <>
+Maintainer: Fred Barclay. <BugsAteFred@gmail.com>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.2
 

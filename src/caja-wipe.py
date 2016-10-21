@@ -87,7 +87,7 @@ class CajaWipe(GObject.GObject, Caja.MenuProvider):
 			item.connect('activate', self.wipe_file, file)
 			return [item]
 
-		# If we're erasing pnly files, or both files and directories
+	# If we're erasing only files, or both files and directories
 		else:
 			item = Caja.MenuItem(
 				name='SimpleMenuExtension::Wipe_File',
