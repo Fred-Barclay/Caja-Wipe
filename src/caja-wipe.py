@@ -1,4 +1,4 @@
- #!/usr/bin/env python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 # Caja Wipe - Extension for Caja to wipe files and/or free disk space.
@@ -16,9 +16,9 @@
 #   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #   GNU General Public License for more details.
 #
-#   You should have received a copy of the GNU General Public License
-#   along with this program; if not, write to the Free Software
-#   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+#   You should have received a copy of the GNU General Public License along with
+#   this program; if not, write to the Free Software Foundation, Inc., 51
+#   Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #
 # Custom license terms:
 #   You are hereby granted a perpetual, irrevocable license to copy, modify,
@@ -58,7 +58,7 @@ class CajaWipe(GObject.GObject, Caja.MenuProvider):
 		'''Returns the menu items to display when one or more files/folders are
 		selected.'''
 
-		# I need this in wipe_file
+		# I need this in wipe_file()
 		global filelist
 		global pwd
 
@@ -74,7 +74,7 @@ class CajaWipe(GObject.GObject, Caja.MenuProvider):
 			return
 
 		# Make sure that the user has write permissions in this directory
-		if not os.access(pwd, os.W_OK):
+		elif not os.access(pwd, os.W_OK):
 			return
 
 		# If we're erasing only directories
@@ -101,10 +101,6 @@ class CajaWipe(GObject.GObject, Caja.MenuProvider):
 	def wipe_file(self, menu, file):
 		for filename in filelist:
 			path = pwd+"/"+filename
-			# path = str(path)
-			if not os.access(path, os.W_OK):
-				print("You do not have permission to wipe this file") # Debugging
-				return
 			print(path) # Debugging
 			cmd = [ "srm", "-rv", path ]
 			subprocess.call(cmd)

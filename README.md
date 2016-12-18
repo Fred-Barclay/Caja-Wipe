@@ -42,7 +42,15 @@ grade school...
 
 Building and Installing
 =======================
-Debian (and Debian-based distros)  
+#### Dependencies
+ - caja
+ - python-caja
+ - xautomation
+ - secure-delete  
+ *Please note that these are the Debian names and may vary per distro. For
+ example, `secure-delete` is called `srm` in Arch*
+
+### Debian (and Debian-based distros)  
 a) Download source code  
 ```
 git clone https://github.com/Fred-Barclay/Caja-Wipe.git
@@ -53,7 +61,7 @@ cd .. && sudo dpkg -i install caja-wipe_0.8.9_all.deb
 b) Restart caja  
 `caja -q`
 
-Other distros (not system-wide)  
+### Other distros (not system-wide)  
 ```
 mkdir -r ~/.local/share/caja-python/extensions/
 git clone https://github.com/Fred-Barclay/Caja-Wipe.git
