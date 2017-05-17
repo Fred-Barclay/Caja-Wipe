@@ -32,10 +32,10 @@ overwriting old data which belonged to the file.
 
 Examples
 ==============
-You want to completely remove a document with your bank account number from
+You want to completely remove a document with your bank account information from
 your computer.  
 
-You need to delete your private GPG key from your secret folder.  
+You need to delete a private GPG key from your secret folder.  
 
 You just really, *really*, don't want anyone to see that embarassing photo from
 grade school...
@@ -47,8 +47,8 @@ Building and Installing
  - python-caja
  - xautomation
  - secure-delete  
- *Please note that these are the Debian names and may vary per distro. For
- example, `secure-delete` is called `srm` in Arch*
+ *Please note that these are the Debian package names and may vary per distro.
+ For example, `secure-delete` is provided by `srm` in Arch*
 
 ### Debian (and Debian-based distros)  
 a) Download source code  
@@ -83,8 +83,8 @@ wipe them.
 
  - Swap: For secure deletion of the swap space, use `sswap`. Due to the great
 difficulty in setting up a generic implementation to `sswap`, and the potential
-for system damage this command might cause, Caja Wipe does not have a option
-to this so you will have to use the command line.
+for system damage this command might cause, Caja Wipe does not offer an option
+for this so you will have to use the command line.
 
  - Some of your data might have a temporary (deleted) copy somewhere on the
 disk.
@@ -103,10 +103,12 @@ copyright van Hauser / THC <vh@thc.org>.
 
 License
 ==============
-Caja Wipe is dual-licensed under the GPLv2, or, at your option, any later
-version; and custom, highly-permissive licensing terms.
+Caja Wipe is dual-licensed in source code form under the GPLv2, or, at your
+option, any later version; and custom, highly-permissive licensing terms.
 
-The text for both can be found in the COPYING file. A list of authors is in the
-AUTHORS file.
+In .deb format, caja-wipe is licensed solely under the GPLv2.
+
+The text for both licenses can be found in the COPYING file. A list of authors
+is in the AUTHORS file.
 
 Copyright (C) 2016 Caja Wipe authors.
