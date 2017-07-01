@@ -56,8 +56,21 @@ a) Download source code
 git clone https://github.com/Fred-Barclay/Caja-Wipe.git
 cd Caja-Wipe
 dpkg-buildpackage
-cd .. && sudo dpkg -i install caja-wipe_0.8.9_all.deb
+cd .. && sudo dpkg -i caja-wipe_0.8.9_all.deb
 ```
+If you get a similar message to this when installing caja-wipe:
+```
+dpkg: dependency problems prevent configuration of caja-wipe:
+ caja-wipe depends on python-caja (>= 1.08); however:
+  Package python-caja is not installed.
+ caja-wipe depends on xautomation (>= 1.07); however:
+  Package xautomation is not installed.
+ caja-wipe depends on secure-delete (>= 3.1-6); however:
+  Package secure-delete is not installed.
+```
+Simply run `sudo apt-get -f install`
+
+
 b) Restart caja  
 `caja -q`
 
