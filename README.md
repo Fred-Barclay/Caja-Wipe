@@ -51,7 +51,11 @@ Building and Installing
  For example, `secure-delete` is provided by `srm` in Arch*
 
 ### Debian (and Debian-based distros)  
-a) Download source code  
+a) Install common build dependencies
+`sudo apt-get install debhelper build-essential`
+
+
+b) Download source code  
 ```
 git clone https://github.com/Fred-Barclay/Caja-Wipe.git
 cd Caja-Wipe
@@ -70,8 +74,11 @@ dpkg: dependency problems prevent configuration of caja-wipe:
 ```
 Simply run `sudo apt-get -f install`
 
+Errors like  
+`dpkg-buildpackage: error: failed to sign .dsc and .changes file`  
+ are expected and can be safely ignored.
 
-b) Restart caja  
+c) Restart caja  
 `caja -q`
 
 ### Other distros (not system-wide)  
