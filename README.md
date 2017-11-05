@@ -46,9 +46,7 @@ Building and Installing
  - caja
  - python-caja
  - xautomation
- - secure-delete  
- *Please note that these are the Debian package names and may vary per distro.
- For example, `secure-delete` is provided by `srm` in Arch*
+ - secure-delete
 
 ### Debian (and Debian-based distros)  
 a) Install common build dependencies
