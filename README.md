@@ -44,7 +44,7 @@ Building and Installing
 =======================
 #### Dependencies
  - caja
- - python-caja
+ - python-caja (Arch users install `python2-caja`)
  - xautomation
  - secure-delete
 
